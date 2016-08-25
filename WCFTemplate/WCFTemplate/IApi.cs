@@ -30,7 +30,7 @@ namespace WCFTemplate {
     public class Persona {
         private int _id;
         private string _nombre;
-        private string email;
+        private string _email;
         /// <summary>
         /// DataMember
         /// Utilizado para poder habilitar las propiedades de la estructura para que sean
@@ -59,11 +59,11 @@ namespace WCFTemplate {
         [DataMember]
         public string Email {
             get {
-                return email;
+                return _email;
             }
 
             set {
-                email = value;
+                _email = value;
             }
         }
     }
